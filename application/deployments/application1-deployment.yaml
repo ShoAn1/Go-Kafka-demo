@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.21.0 (992df58d8)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: application1
+  name: application1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: application1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert
+        kompose.version: 1.21.0 (992df58d8)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: application1
+    spec:
+      containers:
+      - args:
+        - go
+        - run
+        - main.go
+        env:
+        - name: PORT
+          value: "9092"
+        image: application1
+        imagePullPolicy: Never
+        name: application1
+        ports:
+        - containerPort: 8000
+        - containerPort: 9092
+        resources: {}
+        volumeMounts:
+        - mountPath: /go/src/app
+          name: application1-claim0
+        workingDir: /go/src/app
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes:
+      - name: application1-claim0
+        persistentVolumeClaim:
+          claimName: application1-claim0
+status: {}
