@@ -20,9 +20,9 @@ ON Minicube
 
 DOWNLOAD AND SETUP MINIKUBE 
 
->1.Go to deployments
+->1.Go to deployments
 
->2. Run below command
+->2. Run below command
     
     >kubectl apply -f zookeper-deployment.yml
     
@@ -30,12 +30,12 @@ DOWNLOAD AND SETUP MINIKUBE
     
     >kubectl apply -f kafka-claim0-persistentvolumeclaim.yaml
      
-     >kubectl apply -f kafka-service.yaml
-    -
+    >kubectl apply -f kafka-service.yaml
+  
     >kubectl apply -f kafka-deployment.yaml
-    -
+    
     >kubectl apply -f application1-claim0-persistentvolumeclaim.yaml
-    -
+    
     >kubectl apply -f application1-service.yaml
-    -
+    
     >kubectl apply -f application1-deployment.yaml
