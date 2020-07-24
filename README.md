@@ -5,27 +5,28 @@ ON DOCKER
 
 DOWNLOAD AND INSTALL DOCKER AND DOCKER-COMPOSE 
 
-      1.Go to /application
+      >Go to /application
 
-      2.Run Command
-      docker-compose --build
-      this will create application image
+      >Run Command
+      -docker-compose --build
+      -this will create application image
 
-      3.Run command
-      docker-compose up
-      to start the application 
+      >Run command
+      -docker-compose up
+      -to start the application 
       
 
 ON Minicube 
 
 DOWNLOAD AND SETUP MINIKUBE 
 
-1  Go to deployments
+>1.Go to deployments
 
-2. Run below command
-    ->kubectl apply -f zookeper-deployment.yml
-
-     ->kubectl apply -f zookeeper-service.yml
+>2. Run below command
+    
+    >kubectl apply -f zookeper-deployment.yml
+    
+    >kubectl apply -f zookeeper-service.yml
     
     >kubectl apply -f kafka-claim0-persistentvolumeclaim.yaml
      
