@@ -1,8 +1,8 @@
 # Go-Kafka-demo
 Steps to deploy 
 
-ON DOCKER
-DOWNLOAD AND INSTALL DOCKER AND DOCKER-COMPOSE 
+#ON DOCKER
+#DOWNLOAD AND INSTALL DOCKER AND DOCKER-COMPOSE 
 1.Go to /application
 2.Run Command
       docker-compose --build
@@ -11,8 +11,8 @@ DOWNLOAD AND INSTALL DOCKER AND DOCKER-COMPOSE
       docker-compose up
       to start the application 
       
-ON Minicube 
-DOWNLOAD AND SETUP MINIKUBE 
+#ON Minicube 
+#DOWNLOAD AND SETUP MINIKUBE 
 1  Go to deployments
 2. Run below command
     ->kubectl apply -f zookeper-deployment.yml
