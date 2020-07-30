@@ -56,7 +56,6 @@ func messageCount(w http.ResponseWriter, r *http.Request) {
 	fmt.Println("GET Response", resp)
 	w.Write(js)
 	//json.NewEncoder(w).Encode(resp)
-	// //json.NewEncoder(w)
 }
 
 func main() {
