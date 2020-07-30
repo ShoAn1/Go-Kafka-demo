@@ -30,8 +30,6 @@ func produce(wg *sync.WaitGroup, message []byte) {
 		fmt.Println(message)
 		w.WriteMessages(context.Background(),
 			kafka.Message{
-
-				// Key:   []byte("Key-A"),
 				Value: []byte(message),
 			},
 		)
